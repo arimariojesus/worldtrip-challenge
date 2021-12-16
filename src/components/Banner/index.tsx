@@ -9,10 +9,12 @@ export const Banner = () => {
       h="335"
       bgImage="url(https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1553&q=80)"
       bgPos="center 30%"
+      mb="8"
     >
       <Flex
         w="100%"
-        maxW={1080}
+        maxW={1200}
+        mx="auto"
         h="100%"
         justify="space-between"
         align="center"
