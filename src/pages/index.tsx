@@ -1,8 +1,9 @@
-import { Header } from "../components/Header";
-import { Banner } from "../components/Banner";
-import { TravelTypes } from "../components/TravelTypes";
 import { Divider, Text } from "@chakra-ui/react";
-import ContinentsSlider from "../components/ContinentsSlider";
+
+import { Header } from "../components/Header";
+import { Banner } from "../components/Home/Banner";
+import { TravelTypes } from "../components/Home/TravelTypes";
+import ContinentsSlider from "../components/Home/ContinentsSlider";
 
 export default function Home() {
   return (

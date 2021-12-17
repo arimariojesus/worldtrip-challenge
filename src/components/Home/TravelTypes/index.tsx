@@ -1,11 +1,11 @@
 import { Icon, Stack, Text } from "@chakra-ui/react";
-import { BuildingIcon, CocktailIcon, EarthIcon, MuseumIcon, SurfIcon } from "../../assets/icons";
+import { BuildingIcon, CocktailIcon, EarthIcon, MuseumIcon, SurfIcon } from "../../../assets/icons";
 
 export const TravelTypes = () => {
   return (
     <Stack
       w="100%"
-      maxW={1200}
+      maxW={1280}
       px="6"
       mt="28"
       mx="auto"

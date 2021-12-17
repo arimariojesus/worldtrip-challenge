@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 
-import Airplane from "../../assets/images/airplane";
+import Airplane from "../../../assets/images/airplane";
 
 export const Banner = () => {
   return (
@@ -13,7 +13,7 @@ export const Banner = () => {
     >
       <Flex
         w="100%"
-        maxW={1200}
+        maxW={1280}
         mx="auto"
         h="100%"
         justify="space-between"

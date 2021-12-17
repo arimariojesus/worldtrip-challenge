@@ -16,7 +16,7 @@ export const Header = () => {
       justify="center"
       w="100%"
       px="6"
-      maxW={1200}
+      maxW={1280}
       h="90"
       mx="auto"
     >
