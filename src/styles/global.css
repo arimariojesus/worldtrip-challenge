@@ -2,3 +2,9 @@
   --swiper-navigation-color: #ffba08 !important;
   --swiper-theme-color: #ffba08 !important;
 }
+
+@media screen and (max-width: 48rem) {
+  :root {
+    --swiper-navigation-size: 1.5rem !important;
+  }
+}

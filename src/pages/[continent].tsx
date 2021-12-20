@@ -10,7 +10,7 @@ export default function Continent() {
       
       <Banner />
 
-      <Box w="100%" maxWidth={1280} mx="auto" px="4">
+      <Box w="100%" maxWidth={1280} mx="auto" px="6">
         <Stack
           direction="row"
           spacing="14"

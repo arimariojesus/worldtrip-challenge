@@ -1,13 +1,15 @@
-import { Box, Flex, Icon, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Link as ChakraLink, useBreakpointValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-import Back from '../../assets/icons/back';
-import Logo from '../../assets/images/logo';
+import { FiChevronLeft } from 'react-icons/fi';
 
 export const Header = () => {
   const { asPath } = useRouter();
   const outHome = asPath !== '/';
+  const isWiderThanMediumVersion = useBreakpointValue({
+    base: false,
+    md: true,
+  });
 
   return (
     <Flex
@@ -17,18 +19,22 @@ export const Header = () => {
       w="100%"
       px="6"
       maxW={1280}
-      h="90"
+      h={isWiderThanMediumVersion ? '90' : '50'}
       mx="auto"
     >
       {outHome && (
         <Link href="/" passHref>
           <ChakraLink justifySelf="left">
-            <Icon as={Back} />
+            <Icon as={FiChevronLeft} fontSize={['1rem', '2rem']} />
           </ChakraLink>
         </Link>
       )}
       <Box mx="auto">
-        <Icon as={Logo} />
+        <Image
+          src="/assets/images/logo.svg"
+          alt="World Trip"
+          w={!isWiderThanMediumVersion && '81px'}
+        />
       </Box>
     </Flex>
   );

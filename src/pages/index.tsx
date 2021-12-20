@@ -13,15 +13,15 @@ export default function Home() {
       <TravelTypes />
       
       <Divider
-        mt="16"
-        mb="14"
+        mt={['8', '14', '16']}
+        mb={['6', '12', '14']}
         mx="auto"
         w={90}
         h="2px"
         bg="gray.800"
       />
 
-      <Text fontSize="4xl" textAlign="center" fontWeight="medium">
+      <Text fontSize={['xl', '2xl', '4xl']} textAlign="center" fontWeight="medium">
         Vamos nessa?
         <br />
         Então escolha seu continente

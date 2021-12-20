@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
+import { AspectRatio, Flex, Text } from "@chakra-ui/react";
 
 export const Banner = () => {
   return (
@@ -8,16 +8,25 @@ export const Banner = () => {
       bgRepeat="no-repeat"
       bgSize="100%"
     >
-      <Flex py="14" px="32" bg="rgba(0,0,0,0.15)">
-        <Text
-          mr="auto"
-          mt="auto"
-          fontSize="5xl"
-          fontWeight="semibold"
-          color="gray.50"
+      <Flex bg="rgba(0,0,0,0.15)">
+        <Flex
+          maxWidth={1280}
+          w="100%"
+          h="100%"
+          px="6"
+          py="14"
+          mx="auto"
+          align="flex-end"
+          justify="flex-start"
         >
-          Europe
-        </Text>
+          <Text
+            fontSize="5xl"
+            fontWeight="semibold"
+            color="gray.50"
+          >
+            Europe
+          </Text>
+        </Flex>
       </Flex>
     </AspectRatio>
   );

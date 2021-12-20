@@ -10,7 +10,7 @@ import { SliderItem } from "./SliderItem";
 
 export default function ContinentsSlider() {
   return (
-    <Box my="9" mx="auto" w="100%" maxW={1280} px="6">
+    <Box my="9" mx="auto" w="100%" maxW={1280} px={['0', '0', '6']}>
       <Swiper modules={[Navigation, Pagination]} navigation pagination>
         <SwiperSlide>
           <SliderItem />
