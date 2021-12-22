@@ -1,6 +1,11 @@
-import { AspectRatio, Flex, Text } from "@chakra-ui/react";
+import { AspectRatio, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export const Banner = () => {
+  const isWiderThanMediumVersion = useBreakpointValue({
+    base: false,
+    md: true,
+  });
+
   return (
     <AspectRatio
       ratio={1440 / 500}
@@ -16,11 +21,11 @@ export const Banner = () => {
           px="6"
           py="14"
           mx="auto"
-          align="flex-end"
-          justify="flex-start"
+          align={isWiderThanMediumVersion ? "flex-end" : "center"}
+          justify={isWiderThanMediumVersion ? "flex-start" : "center"}
         >
           <Text
-            fontSize="5xl"
+            fontSize={["3xl", "4xl", "5xl"]}
             fontWeight="semibold"
             color="gray.50"
           >
